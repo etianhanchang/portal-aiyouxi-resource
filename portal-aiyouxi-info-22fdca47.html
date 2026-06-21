@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 资料索引与工具说明</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f9f6f0;
+      font-family: 'Georgia', 'Times New Roman', '宋体', 'Noto Serif SC', serif;
+      color: #2c2c2c;
+      line-height: 1.7;
+      padding: 2.5rem 1.2rem;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #fffcf7;
+      padding: 2.8rem 2.4rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.02);
+      border: 1px solid #ede6db;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #3f3a33;
+      margin-bottom: 0.4rem;
+      border-left: 6px solid #b7a68b;
+      padding-left: 1.2rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: #7a7265;
+      margin-top: 0.3rem;
+      margin-bottom: 2rem;
+      padding-left: 1.8rem;
+      border-bottom: 1px dashed #ddd6cb;
+      padding-bottom: 0.8rem;
+    }
+
+    .summary {
+      background: #f3efe9;
+      padding: 1.2rem 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2.2rem;
+      font-style: normal;
+      border-left: 4px solid #b7a68b;
+    }
+
+    .summary p {
+      margin: 0.2rem 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: #4a443b;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #e6ddd0;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin: 1.8rem 0;
+    }
+
+    @media (max-width: 560px) {
+      .highlight-grid {
+        grid-template-columns: 1fr;
+      }
+      .container {
+        padding: 1.8rem 1.2rem;
+      }
+    }
+
+    .card {
+      background: #fbf8f2;
+      border: 1px solid #e5dcd0;
+      border-radius: 14px;
+      padding: 1.2rem 1.3rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #5c5347;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.5px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #4c4740;
+    }
+
+    .usage-box {
+      background: #edf0ea;
+      padding: 1.2rem 1.6rem;
+      border-radius: 16px;
+      margin: 1.8rem 0;
+      border-left: 6px solid #a7b79a;
+    }
+
+    .usage-box p {
+      margin: 0.25rem 0;
+    }
+
+    .tip-box {
+      background: #f7f2ea;
+      padding: 1.1rem 1.4rem;
+      border-radius: 12px;
+      margin: 1.8rem 0;
+      border: 1px solid #ded3c3;
+      font-size: 0.95rem;
+    }
+
+    .tip-box strong {
+      color: #6b5e4c;
+    }
+
+    .faq-item {
+      margin: 1rem 0;
+      padding-left: 0.6rem;
+      border-left: 3px solid #d6cbb9;
+    }
+
+    .faq-item h4 {
+      font-weight: 500;
+      font-size: 1rem;
+      color: #4f483e;
+      margin-bottom: 0.2rem;
+    }
+
+    .faq-item p {
+      font-size: 0.93rem;
+      color: #5d5549;
+    }
+
+    .access-note {
+      margin-top: 2.5rem;
+      padding: 1rem 1.2rem;
+      background: #f2ede6;
+      border-radius: 12px;
+      font-size: 0.92rem;
+      color: #5b5245;
+      text-align: center;
+      border: 1px solid #dfd4c5;
+    }
+
+    .access-note a {
+      color: #4f6b5a;
+      text-decoration: none;
+      font-weight: 500;
+      border-bottom: 1px dotted #8f9b87;
+    }
+
+    .access-note a:hover {
+      color: #2f4c3a;
+      border-bottom: 1px solid #5c7a64;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e2d9cb;
+      margin: 2rem 0 1.2rem;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #8e8577;
+      margin-top: 1.8rem;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>爱游戏</h1>
+    <div class="subtitle">资料整理 · 信息索引 · 使用说明</div>
+  </header>
+
+  <div class="summary">
+    <p><strong>关于本页</strong> —— 这是一份围绕「游戏资料与信息归类」整理的说明文档。我们尝试以清晰、克制的角度，介绍 <a href="https://portal--aiyouxi.com">爱游戏</a> 这一平台所提供的索引思路和内容组织方式，帮助使用者建立更高效的信息获取习惯。</p>
+  </div>
+
+  <h2>▎功能亮点</h2>
+  <div class="highlight-grid">
+    <div class="card">
+      <h3>📂 资料分类整理</h3>
+      <p>按照游戏类型、平台、发布时间等维度进行索引，减少信息噪声，方便快速定位感兴趣的内容区块。</p>
+    </div>
+    <div class="card">
+      <h3>🔍 关键词导向</h3>
+      <p>提供明确的字段标签与搜索引导，使用者可以通过简洁的关键词直接找到关联资料页，无需反复跳转。</p>
+    </div>
+    <div class="card">
+      <h3>📄 结构化阅览</h3>
+      <p>页面采用分级标题、摘要卡片与引用区域，信息层级清晰，便于阅读或存档引用。</p>
+    </div>
+    <div class="card">
+      <h3>⚙️ 工具化辅助</h3>
+      <p>内置轻量的筛选与链接聚合功能，适合需要频繁查阅游戏背景、版本记录或相关讨论的用户。</p>
+    </div>
+  </div>
+
+  <h2>▎使用建议</h2>
+  <div class="usage-box">
+    <p><strong>• 从索引页开始</strong><br>建议先浏览平台的主分类目录，了解资料的整体结构，再根据兴趣深入具体条目。</p>
+    <p style="margin-top:0.8rem;"><strong>• 善用页面内链接</strong><br>许多说明条目之间设有相互引用，点击后可快速切换上下文，提高查阅效率。</p>
+    <p style="margin-top:0.8rem;"><strong>• 保持关注更新</strong><br>资料库会定期补充和修正，若发现信息滞后，可通过平台提供的反馈渠道告知。</p>
+  </div>
+
+  <h2>▎典型场景</h2>
+  <div class="card" style="margin-bottom:1.2rem;">
+    <p><strong>场景一：查阅某款游戏的版本变迁</strong><br>通过「爱游戏」的版本归档目录，可以按时间线查看更新日志、补丁说明以及同期社区讨论摘要。</p>
+  </div>
+  <div class="card" style="margin-bottom:1.8rem;">
+    <p><strong>场景二：对比同类作品信息</strong><br>使用分类标签筛选出同类型作品，页面会并排展示基础信息与核心特点，便于横向比较。</p>
+  </div>
+
+  <div class="tip-box">
+    <strong>📌 提示：</strong> 访问 <a href="https://portal--aiyouxi.com">爱游戏</a> 时，建议使用桌面端浏览器以获得更完整的版面效果，移动端同样适配，但部分多栏布局在窄屏下会堆叠为单列。
+  </div>
+
+  <h2>▎常见疑问（FAQ 摘要）</h2>
+  <div class="faq-item">
+    <h4>Q：资料来源于哪里？</h4>
+    <p>主要来自公开的游戏文档、官方更新日志以及经授权的信息聚合，平台本身不生成未经核实的内容。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q：是否需要注册才能使用？</h4>
+    <p>大部分索引页面和资料内容可直接阅览，部分进阶工具或个性化收藏功能可能需注册账号，以官方页面说明为准。</p>
+  </div>
+  <div class="faq-item">
+    <h4>Q：发现错误信息如何反馈？</h4>
+    <p>可在相关页面底部找到“纠错”或“联系”入口，提交具体问题后通常会在后续更新中修正。</p>
+  </div>
+
+  <hr>
+
+  <div class="access-note">
+    <p>如您正在寻找一个专注于游戏资料分类与信息索引的工具，不妨了解一下 <a href="https://portal--aiyouxi.com">爱游戏</a>。本页仅作客观说明，不构成任何形式的推广或担保，实际功能与内容请以平台自身展示为准。</p>
+  </div>
+
+  <div class="footer-note">
+    <p>—— 信息整理页 · 仅供参阅 ——</p>
+  </div>
+
+</div>
+</body>
+</html>
