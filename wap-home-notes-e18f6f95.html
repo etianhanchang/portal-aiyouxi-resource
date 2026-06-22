@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>竞彩资料索引 — 竞彩网信息手册</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f2f5f9;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        /* 深色头图区 */
+        .hero {
+            background: linear-gradient(145deg, #0b1a2e 0%, #1a3344 100%);
+            padding: 5rem 2rem 4rem;
+            text-align: center;
+            border-bottom: 4px solid #f59e0b;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: #e2e8f0;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .sub {
+            font-size: 1.2rem;
+            color: #b0c4d9;
+            margin-top: 0.25rem;
+            font-weight: 300;
+        }
+
+        .hero .tagline {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-top: 1.2rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            padding-top: 1.2rem;
+            display: inline-block;
+        }
+
+        /* 浅色正文区 */
+        .container {
+            max-width: 880px;
+            margin: 0 auto;
+            padding: 2.8rem 1.8rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+            padding: 2.5rem 2.8rem;
+            margin-bottom: 2.5rem;
+            transition: box-shadow 0.2s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 32px rgba(0,0,0,0.07);
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #0f2a3f;
+            border-left: 5px solid #f59e0b;
+            padding-left: 1rem;
+            margin-bottom: 1.4rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1e3b4f;
+            margin: 1.8rem 0 0.6rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.02rem;
+        }
+
+        /* 强调色链接 */
+        a {
+            color: #b45309;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #92400e;
+            border-bottom: 1px solid #b45309;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0.2rem;
+        }
+
+        ul li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.6rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #d97706;
+            font-weight: bold;
+        }
+
+        .highlight-box {
+            background: #fef8ed;
+            border-left: 4px solid #f59e0b;
+            padding: 1.2rem 1.8rem;
+            border-radius: 12px;
+            margin: 1.5rem 0;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin: 1.4rem 0 0.8rem;
+        }
+
+        .feature-item {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 1rem 1.3rem;
+            border: 1px solid #eef2f6;
+        }
+
+        .feature-item strong {
+            color: #1e3b4f;
+            display: block;
+            font-size: 1.05rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .feature-item span {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e2e8f0;
+            padding: 0.8rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            color: #0b2a3f;
+        }
+
+        .faq-a {
+            margin-top: 0.2rem;
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        .disclaimer {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 1.8rem 2rem;
+            margin-top: 2rem;
+            color: #334155;
+            font-size: 0.9rem;
+            border: 1px solid #dce3ec;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dce3ec;
+            margin: 2rem 0;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 1.8rem 1rem;
+            }
+            .card {
+                padding: 1.8rem 1.2rem;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 3rem 1rem 2.5rem;
+            }
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <section class="hero">
+        <h1>竞彩资料整理 · 信息索引</h1>
+        <div class="sub">赛事数据、投注参考与内容聚合</div>
+        <div class="tagline">以资料视角理解竞彩生态</div>
+    </section>
+
+    <!-- 正文区 -->
+    <div class="container">
+
+        <!-- 摘要 / 产品定位 -->
+        <div class="card">
+            <h2>一份竞彩信息汇编</h2>
+            <p>
+                对于关注体育竞猜的爱好者而言，信息获取的及时性与结构化程度往往影响判断效率。<a href="https://wap-home-jingcai.com">竞彩网</a>作为索引型平台，聚合了赛事预告、实时赔率变动、历史交锋记录以及赛果统计等模块，方便用户按需查阅。不同于即时资讯流，该站更偏向于资料库式的陈列——将数据、规则、公告等内容分门别类，供读者自行检索与对比。
+            </p>
+            <p>
+                从资料整理的角度观察，这类平台的价值在于降低信息碎片化带来的认知成本。将分散在多个渠道的竞彩相关数据（联赛积分、球队状态、赔率走势等）归拢到统一界面，本身就是一种信息加工行为。用户无需在数个页面间来回跳转，仅需在一个站点内完成基础的资料查阅。
+            </p>
+        </div>
+
+        <!-- 亮点 / 特点 -->
+        <div class="card">
+            <h2>内容组织上的几个特点</h2>
+            <p>经过对 <strong>竞彩网</strong> 页面结构的梳理，可以发现其在信息编排上有以下值得留意的细节：</p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <strong>分类导航</strong>
+                    <span>按联赛、赛事类型、日期等维度划分，减少浏览中的选择负担。</span>
+                </div>
+                <div class="feature-item">
+                    <strong>数据对照</strong>
+                    <span>将赔率、让球、胜平负等指标并列展示，便于横向比较。</span>
+                </div>
+                <div class="feature-item">
+                    <strong>结果回溯</strong>
+                    <span>保留历史赛果与过关统计，适合复盘与记录习惯的用户。</span>
+                </div>
+                <div class="feature-item">
+                    <strong>规则说明</strong>
+                    <span>开奖、派奖、兑奖等机制有单独页面，适合新读者了解基础。</span>
+                </div>
+            </div>
+            <p>这些模块并不追求算法推荐，而是用目录式的方法让用户根据自身需求主动查找。对于习惯先收集信息再判断的人来说，这样的结构更贴合查阅逻辑。</p>
+        </div>
+
+        <!-- 使用建议 / 场景 -->
+        <div class="card">
+            <h2>适用场景与使用建议</h2>
+            <p>结合不同类型用户的使用习惯，以下场景或许能帮助你更高效地利用该站：</p>
+            <ul>
+                <li><strong>赛前信息收集</strong> — 浏览当日对阵列表，查看赔率与让球变化，辅助形成个人判断。</li>
+                <li><strong>赛后数据核对</strong> — 查阅已结束场次的结果与奖金，用于记录或验证自己的分析。</li>
+                <li><strong>规则查阅</strong> — 对过关方式、奖金计算等细节有疑问时，直接查看站内说明页，避免误解。</li>
+                <li><strong>多平台对比</strong> — 将站内赔率与其他参考源做交叉比对，发现异常或趋势。</li>
+            </ul>
+            <div class="highlight-box">
+                ⚡ 建议优先使用 <strong>“赛事筛选”</strong> 功能缩小范围，再逐一查看具体场次数据。直接浏览全部列表可能会因信息量过大而降低效率。
+            </div>
+        </div>
+
+        <!-- 可信但克制的说明 -->
+        <div class="card">
+            <h2>关于信息源的几点提醒</h2>
+            <p>
+                任何资料索引平台都无法保证数据的绝对实时与无误。<a href="https://wap-home-jingcai.com">竞彩网</a>所展示的内容同样受限于数据源更新频率、人工录入延迟以及第三方接口稳定性等因素。建议读者在参考赔率或奖金信息时，至少与两个以上独立来源进行核对，尤其涉及即时变化较大的场次。
+            </p>
+            <p>
+                此外，平台本身不提供投注建议、预测分析或任何形式的保证。所有数据仅供个人研究使用，最终判断应由用户自己做出。竞猜活动应当基于对体育比赛的客观了解，而非对数据工具的盲目依赖。
+            </p>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <div class="card">
+            <h2>常见疑问简要</h2>
+            <div class="faq-item">
+                <div class="faq-q">该站是否提供实时的比分直播？</div>
+                <div class="faq-a">主要侧重赛前数据与赛后结果，直播功能并非核心模块，建议配合专业直播平台使用。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">历史数据可以追溯多久？</div>
+                <div class="faq-a">通常保留最近一至两个赛季的完整记录，具体视联赛类型而定，较早场次可能无法覆盖。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">移动端是否适配良好？</div>
+                <div class="faq-a">页面采用响应式布局，在手机浏览器中可自适应，表格数据建议横屏查看更清晰。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">如何反馈数据异常或建议？</div>
+                <div class="faq-a">网站底部通常留有联系方式或反馈入口，但目前未提供即时在线客服，等待回复需要一定时间。</div>
+            </div>
+        </div>
+
+        <!-- 免责声明 -->
+        <div class="disclaimer">
+            <strong>📌 资料说明</strong> 本页仅对 <a href="https://wap-home-jingcai.com">竞彩网</a> 的信息结构进行客观介绍，不构成任何投注建议或诱导行为。所有数据均以平台实际展示为准，请自行辨别核实。竞猜有风险，请理性参与。
+        </div>
+
+        <hr>
+        <p style="text-align: center; color: #64748b; font-size: 0.85rem; padding: 0.5rem 0 1rem;">
+            内容索引 · 基于公开信息整理
+        </p>
+
+    </div>
+</body>
+</html>
